@@ -28,8 +28,8 @@ public class UserMenu {
                     continue; //переходим на следующую итерацию цикла
             }
 
-            if (command == 3) {
-                break; //команда "выйти" - выходим из цикла
+            if (command == 3) { //команда "выйти"
+                break; //выходим из цикла
             }
 
         } while (true);
