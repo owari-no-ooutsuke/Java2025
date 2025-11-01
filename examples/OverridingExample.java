@@ -1,3 +1,5 @@
+//Переопределим для класса ComplexNumber методы equals, hashCode и toString суперкласса Object
+
 class ComplexNumber {
     public double re;
     public double im;
@@ -6,7 +8,7 @@ class ComplexNumber {
         this.re = re;
         this.im = im;
     }
-
+    
     //Хотим сравнивать не ссылки, а значения (по определению равенства комплексных чисел)
     @Override
     public boolean equals(Object obj) {
