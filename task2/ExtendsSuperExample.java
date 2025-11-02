@@ -63,7 +63,7 @@ public class ExtendsSuperExample {
     //Использование <? super T>
     //Можем сортировать List<T> компаратором как для T, так и для его суперклассов
     public static <T> void sortByComparator(List<T> list, Comparator<? super T> comparator) {
-        //Сортируем (тут могла бы быть пользовательская сортировка)
+        //Сортируем (тут могла бы быть реализация сортировки)
         list.sort(comparator);
     }
 
