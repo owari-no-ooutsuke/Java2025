@@ -2,7 +2,7 @@ import java.util.Formatter;
 
 public class FormatterExample {
     public static void main(String[] args) {
-        Formatter formatter = new Formatter();
+        Formatter formatter = new Formatter(System.out);
 
         int a = 2;
         int b = 35;
@@ -13,7 +13,5 @@ public class FormatterExample {
         String word = "hello";
         //Используем %n, %c
         formatter.format("%nПервая буква слова - %c", word.charAt(0));
-
-        System.out.println(formatter);
     }
 }
