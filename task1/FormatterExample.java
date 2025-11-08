@@ -13,5 +13,7 @@ public class FormatterExample {
         String word = "hello";
         //Используем %n, %c
         formatter.format("%nПервая буква слова - %c", word.charAt(0));
+
+        formatter.close();
     }
 }
